@@ -13,7 +13,7 @@ const transactionInfoPattern: RegExp = new RegExp(
         '([0-9]{2})?', // DD
         '(C|D|RD|RC|EC|ED)',
         '([A-Z]{1})?', // Funds code
-        '([0-9]+[,.][0-9]*)', // Amount
+        '([0-9 ]+[,.][0-9]*)', // Amount
         '([A-Z0-9]{4})?', // Transaction code
         '([^/\n\r]{0,16}|NONREF)?', // Customer reference
         '(//[A-Z0-9]{16})?' // Bank reference
@@ -27,7 +27,9 @@ const incomeTransactionCodes: string[] = [
     'N654',
 
     // ING bank
-    'N060'
+    'N060',
+    //RBA
+    'NMSC'
 ];
 
 /**
