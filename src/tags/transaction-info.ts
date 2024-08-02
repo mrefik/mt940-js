@@ -28,7 +28,7 @@ const incomeTransactionCodes: string[] = [
 
     // ING bank
     'N060',
-    //RBA
+    // RBA
     'NMSC'
 ];
 

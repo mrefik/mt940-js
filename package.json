@@ -1,6 +1,6 @@
 {
   "name": "mt940-js",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "An isomorphic Javascript library for working with MT940 format",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -18,7 +18,8 @@
     "test": "jest --collectCoverage && cat ./__tests__/coverage/lcov.info | coveralls",
     "lint": "tslint \"src/**/*.ts\" \"__tests__/unit/**/*.ts\"",
     "format": "prettier --write '{src,__tests__/unit}/**/*.{js,ts}' && prettier --write '*.{js,ts}'",
-    "build": "npm run format && npm run lint && rm -rf lib && tsc"
+    "build": "npm run format && npm run lint && rm -rf lib && tsc",
+    "buildm": "rm -rf lib && tsc"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,5 @@
     "mt940"
   ],
   "author": "webschik",
-  "license": "MIT",
-  "dependencies": {}
+  "license": "MIT"
 }
